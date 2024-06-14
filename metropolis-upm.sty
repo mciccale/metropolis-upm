@@ -1,0 +1,36 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Universidad Politécnica Theme for Metropolis
+%% https://github.com/mciccale/metropolis-upm
+
+\RequirePackage{caption}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Constants
+\definecolor{blue}{RGB}{45, 90, 174}
+\definecolor{lightblue}{RGB}{78, 158, 222}
+\definecolor{orange}{RGB}{218, 125, 31}
+\definecolor{red}{RGB}{237, 28, 36}
+\definecolor{gray}{RGB}{225, 228, 232}
+\newcommand{\progressbar}{1pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Captions
+\RequirePackage{caption}
+\captionsetup[figure]{labelfont={bf,color=blue}}
+\captionsetup[table]{labelfont={bf,color=blue}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Progress Bar
+\makeatletter
+\setlength{\metropolis@titleseparator@linewidth}{\progressbar}
+\setlength{\metropolis@progressonsectionpage@linewidth}{\progressbar}
+\setlength{\metropolis@progressinheadfoot@linewidth}{\progressbar}
+\makeatother
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Slide colors
+\setbeamercolor{alerted text}{fg=red}
+\setbeamercolor{example text}{fg=orange}
+\setbeamercolor{palette primary}{bg=blue}
+\setbeamercolor{progress bar}{fg=lightblue, bg=gray}
+

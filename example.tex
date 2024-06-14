@@ -1,0 +1,69 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Example Slides Using the UPM Metropolis Theme
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Preamble
+\documentclass{beamer}
+\usetheme{metropolis}
+\usepackage{metropolis-upm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Data
+\title{UPM Metropolis Theme}
+\subtitle{Minimal Template with UPM Colors}
+\author{\textbf{Ciccalè Baztán, Marco}}
+\date{\today}
+\institute{Universidad Politécnica de Madrid (UPM)}
+\titlegraphic{\hfill\includegraphics[height=3cm]{upm-logo.png}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Start the document
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Title Page
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Table of Contents
+\begin{frame}{Table of Contents}
+  \setbeamertemplate{section in toc}[sections numbered]
+  \tableofcontents
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Introduction
+\section{Introduction} % (fold)
+\label{sec:Introduction}
+
+\begin{frame}[fragile]
+\frametitle{Slides using \textbf{Beamer} and \textbf{Metropolis}}
+\textbf{Metropolis} is a modern and minimalist \textbf{Bemer} theme that reduces
+the visual distractions.
+
+To create your first slides with \textbf{Beamer} and \textbf{Metropolis}:
+
+\begin{verbatim}
+\documentclass{beamer}
+\usetheme{metropolis}
+\end{verbatim}
+\end{frame}
+
+% section Introduction (end)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Questions
+\setbeamertemplate{frame numbering}[none]
+{\setbeamercolor{palette primary}{fg=white, bg=orange}
+\begin{frame}[standout]
+  Thank You!\\Questions?
+\end{frame}
+}
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
